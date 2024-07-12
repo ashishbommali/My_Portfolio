@@ -1,0 +1,27 @@
+footer {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.social-media-icons a:hover {
+  color: #0073e6; /* Example hover color */
+}

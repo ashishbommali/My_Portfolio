@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  /* Optional: Add a background color */
+  z-index: 1000;
+  /* Ensure it appears above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional: Add a shadow for depth */
+}
+
+header h1 {
+  margin-left: 100px;
+  font-size:  x-large;
+  /* Adjust as needed */
+}
+
+/* Adjust content below the fixed header */
+body {
+  padding-top: 5rem;
+  /* Adjust this value according to your header height */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-right: 100px;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
