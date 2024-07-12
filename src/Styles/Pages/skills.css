@@ -32,16 +32,16 @@
 
 .card ul {
     list-style: none;
-    padding: 0;
+    padding: 15%;
 }
 
 .card ul li {
     display: flex;
     align-items: center;
-    margin-bottom: 5px; /* Reduce margin between items */
+    margin-bottom: 10px; /* Reduce margin between items */
 }
 
-.card ul li .react-icons {
+.card ul li .verified-icon {
     margin-right: 8px; /* Adjust icon margin */
 }
 

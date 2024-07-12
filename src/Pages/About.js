@@ -6,7 +6,7 @@ import '../Styles/Pages/about.css';
 const About = () => {
   return (
     <div id="about">
-      <h1>About Page</h1>
+      <h1>About MySelf</h1>
     </div>
   );
 };
