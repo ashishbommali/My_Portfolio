@@ -45,32 +45,14 @@ const Skills = () => {
         }
     ];
 
-    const NextArrow = (props) => {
-        const { onClick } = props;
-        return (
-            <div className="custom-arrow next" onClick={onClick}>
-                &#9654; {/* You can replace this with an icon */}
-            </div>
-        );
-    };
-
-    const PrevArrow = (props) => {
-        const { onClick } = props;
-        return (
-            <div className="custom-arrow prev" onClick={onClick}>
-                &#9664; {/* You can replace this with an icon */}
-            </div>
-        );
-    };
-
+  
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+      
         responsive: [
             {
                 breakpoint: 1024,

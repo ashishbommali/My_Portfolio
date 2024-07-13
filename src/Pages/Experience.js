@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import '../Styles/Pages/experience.css';
 
 const experienceData = [
   {
@@ -52,7 +53,7 @@ const experienceData = [
   },
   {
     title: "Associate Software Engineer",
-    company: "Alacriti",
+    company: "Alacriti Infosystem Pvt ltd",
     employementType: "Full-time",
     date: "Apr 2022 - Nov 2022 · 8 mos",
     location: "Hyderabad, Telangana, India · On-site",
@@ -139,18 +140,18 @@ const experienceData = [
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
-      <div className="custom-arrow next" onClick={onClick}>
-          &#9654; {/* You can replace this with an icon */}
-      </div>
+    <div className="custom-arrow next" onClick={onClick}>
+      &#9654; {/* You can replace this with an icon */}
+    </div>
   );
 };
 
 const PrevArrow = (props) => {
   const { onClick } = props;
   return (
-      <div className="custom-arrow prev" onClick={onClick}>
-          &#9664; {/* You can replace this with an icon */}
-      </div>
+    <div className="custom-arrow prev" onClick={onClick}>
+      &#9664; {/* You can replace this with an icon */}
+    </div>
   );
 };
 
@@ -163,38 +164,38 @@ const settings = {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   responsive: [
-      {
-          breakpoint: 1024,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-          }
-      },
-      {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
   ]
 };
 
 const Experience = () => {
   return (
-    <div id='experience' className="experience-container">
-      <h1>My Experience</h1>
+    <div id='experience' >
+      <h1>Work Experience</h1>
       <Slider  {...settings} className="experience-container" >
         {experienceData.map((experience, index) => (
           <div key={index} className="experience-card">
+            <h1>{experience.company} · {experience.employementType}</h1>
             <h2>{experience.title}</h2>
-            <h3>{experience.company} · {experience.employementType}</h3>
             <p>{experience.date}</p>
             <p>{experience.location}</p>
             <p>{experience.description}</p>
-            <ul>
+            <ul className="experience-skills">
               {experience.skills.map((skill, idx) => (
                 <li key={idx}>{skill}</li>
               ))}
@@ -202,8 +203,6 @@ const Experience = () => {
           </div>
         ))}
       </Slider>
-
-
     </div>
   );
 };

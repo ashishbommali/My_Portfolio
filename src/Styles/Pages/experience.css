@@ -1,0 +1,57 @@
+/* Styles/Pages/experience.css */
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 75%;
+    /* 3/4 width */
+    margin: 50px auto;
+    /* Center horizontally with top and bottom margin */
+}
+
+.experience-card {
+    width: 100%;
+    /* Full width of parent (skills-container) */
+    max-width: 75%;
+    /* Limit max-width for responsive layout */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* Center align text */
+}
+
+h2 {
+    font-size: x-large;
+}
+
+.read-more-button {
+    width: 20%;
+    justify-content: center;
+}
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.experience-skills li {
+    width: 45%;
+    /* Roughly half width, adjust as needed */
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+p {
+    font-size: large;
+}

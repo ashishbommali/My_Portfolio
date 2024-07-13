@@ -15,9 +15,9 @@ function App() {
       <Header />
       <Home id="home" />
       <About id="about" />
-      <Projects id="projects" />
       <Experience id="experience" />
-      <Skills id="skills"/>
+      <Skills id="skills" />
+      <Projects id="projects" />
       <Contact id="contact" />
       <Footer />
     </div>
