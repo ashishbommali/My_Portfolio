@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../Styles/Pages/home.css';
-import myPhoto1 from '../Assets/Images/20240304_120600.jpg';
-import myPhoto2 from '../Assets/Images/IMG_20240123_210618_578.jpg';
-import myPhoto3 from '../Assets/Images/IMG_20240127_234419_830.jpg';
+import '../styles/pages/home.css';
+import myPhoto1 from '../Assets/images/20240304_120600.jpg';
+import myPhoto2 from '../Assets/images/IMG_20240123_210618_578.jpg';
+import myPhoto3 from '../Assets/images/IMG_20240127_234419_830.jpg';
 import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaDatabase, FaJava, FaNodeJs,
   FaInstagram, FaFacebook, FaTwitter, FaEnvelope, FaLinkedin, FaGithub, FaHandshake, FaMouse, FaArrowDown,

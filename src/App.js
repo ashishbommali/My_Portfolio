@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Projects from './Pages/Projects';
-import Experience from './Pages/Experience';
-import Contact from './Pages/Contact';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Skills from './Pages/Skills';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Skills from './pages/Skills';
 
 function App() {
   return (

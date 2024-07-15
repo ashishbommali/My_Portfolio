@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import '../Styles/Pages/skills.css';
+import '../styles/pages/skills.css';
 import { FaCheck, FaTwitter, FaCheckCircle } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

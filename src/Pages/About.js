@@ -1,7 +1,7 @@
 // src/Pages/About.js
 
 import React from 'react';
-import '../Styles/Pages/about.css';
+import '../styles/pages/about.css';
 
 const About = () => {
   return (
