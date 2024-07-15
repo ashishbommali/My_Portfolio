@@ -1,6 +1,12 @@
 import React from 'react';
 import Slider from 'react-slick';
 import '../Styles/Pages/experience.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const experienceData = [
   {
@@ -194,12 +200,13 @@ const Experience = () => {
             <h2>{experience.title}</h2>
             <p>{experience.date}</p>
             <p>{experience.location}</p>
-            <p>{experience.description}</p>
+            <button className='read-more-button'>Read More</button>
+            {/* <p>{experience.description}</p>
             <ul className="experience-skills">
               {experience.skills.map((skill, idx) => (
                 <li key={idx}>{skill}</li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         ))}
       </Slider>
