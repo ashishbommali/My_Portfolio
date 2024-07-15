@@ -1,50 +1,50 @@
 import React from 'react';
 import Slider from 'react-slick';
 import '../styles/pages/skills.css';
-import { FaCheck, FaTwitter, FaCheckCircle } from 'react-icons/fa';
+// import { FaCheck, FaTwitter, FaCheckCircle } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import skillsData from '../data/skillsData';
 
 const Skills = () => {
-    const data = [
-        {
-            skillName: 'Frontend',
-            skillSet: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'Angular', 'TypeScript', 'Tailwind CSS']
-        },
-        {
-            skillName: 'Backend',
-            skillSet: ['Node.js', 'Express', 'Python', 'Django', 'Flask', 'Java', 'Spring Boot']
-        },
-        {
-            skillName: 'Databases',
-            skillSet: ['SQL', 'MySQL', 'SQLite', 'Firebase']
-        },
-        {
-            skillName: 'Build Tools',
-            skillSet: ['NPM', 'Yarn', 'Docker']
-        },
-        {
-            skillName: 'Machine Learning',
-            skillSet: ['TensorFlow', 'Keras', 'Scikit-learn', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib']
-        },
-        {
-            skillName: 'AI',
-            skillSet: ['NLP', 'Computer Vision', 'Reinforcement Learning', 'Deep Learning', 'OpenCV', 'NLTK']
-        },
-        {
-            skillName: 'Python',
-            skillSet: ['Flask', 'Django', 'Pandas', 'NumPy', 'Matplotlib', 'SciPy', 'Scikit-learn', 'PyTorch', 'TensorFlow', 'FastAPI']
-        },
-        {
-            skillName: 'Java',
-            skillSet: ['Spring', 'Spring Boot', 'Hibernate', 'Apache Maven', 'Gradle', 'JUnit']
-        },
-        {
-            skillName: 'Cloud',
-            skillSet: ['AWS', 'GCP', 'Firebase', 'Docker', 'Kubernetes', 'Terraform']
-        }
-    ];
-
+    // const data = [
+    //     {
+    //         skillName: 'Frontend',
+    //         skillSet: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'Angular', 'TypeScript', 'Tailwind CSS']
+    //     },
+    //     {
+    //         skillName: 'Backend',
+    //         skillSet: ['Node.js', 'Express', 'Python', 'Django', 'Flask', 'Java', 'Spring Boot']
+    //     },
+    //     {
+    //         skillName: 'Databases',
+    //         skillSet: ['SQL', 'MySQL', 'SQLite', 'Firebase']
+    //     },
+    //     {
+    //         skillName: 'Build Tools',
+    //         skillSet: ['NPM', 'Yarn', 'Docker']
+    //     },
+    //     {
+    //         skillName: 'Machine Learning',
+    //         skillSet: ['TensorFlow', 'Keras', 'Scikit-learn', 'PyTorch', 'Pandas', 'NumPy', 'Matplotlib']
+    //     },
+    //     {
+    //         skillName: 'AI',
+    //         skillSet: ['NLP', 'Computer Vision', 'Reinforcement Learning', 'Deep Learning', 'OpenCV', 'NLTK']
+    //     },
+    //     {
+    //         skillName: 'Python',
+    //         skillSet: ['Flask', 'Django', 'Pandas', 'NumPy', 'Matplotlib', 'SciPy', 'Scikit-learn', 'PyTorch', 'TensorFlow', 'FastAPI']
+    //     },
+    //     {
+    //         skillName: 'Java',
+    //         skillSet: ['Spring', 'Spring Boot', 'Hibernate', 'Apache Maven', 'Gradle', 'JUnit']
+    //     },
+    //     {
+    //         skillName: 'Cloud',
+    //         skillSet: ['AWS', 'GCP', 'Firebase', 'Docker', 'Kubernetes', 'Terraform']
+    //     }
+    // ];
   
     const settings = {
         dots: true,
@@ -87,7 +87,7 @@ const Skills = () => {
         <div id="skills">
             <h1>My Skillset</h1>
             <Slider {...settings} className="skills-container">
-                {data.map((category, index) => (
+                {skillsData.map((category, index) => (
                     <div key={index} className="card">
                         <h2>{category.skillName}</h2>
                         <ul className="skills-list">

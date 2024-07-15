@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/pages/home.css';
-import myPhoto1 from '../Assets/images/20240304_120600.jpg';
-import myPhoto2 from '../Assets/images/IMG_20240123_210618_578.jpg';
-import myPhoto3 from '../Assets/images/IMG_20240127_234419_830.jpg';
+import myPhoto1 from '../assets/images/20240304_120600.jpg';
+import myPhoto2 from '../assets/images/IMG_20240123_210618_578.jpg';
+import myPhoto3 from '../assets/images/IMG_20240127_234419_830.jpg';
 import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaDatabase, FaJava, FaNodeJs,
   FaInstagram, FaFacebook, FaTwitter, FaEnvelope, FaLinkedin, FaGithub, FaHandshake, FaMouse, FaArrowDown,
 } from 'react-icons/fa';
 import { IoIosSend } from "react-icons/io";
 
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 
 const photos = [myPhoto1, myPhoto2, myPhoto3];
 
@@ -114,7 +114,7 @@ const Home = () => {
           <FaAngular className="icon angular" />
           <FaDatabase className="icon database" />
           <FaJava className="icon java" />
-          <FaNodeJs className="icon nodeJs"/>
+          <FaNodeJs className="icon nodeJs" />
         </div>
       </div>
     </div>

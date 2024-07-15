@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       <Header />
       <Home id="home" />
-      <About id="about" />
       <Experience id="experience" />
+      <About id="about" />
       <Skills id="skills" />
       <Projects id="projects" />
       <Contact id="contact" />
