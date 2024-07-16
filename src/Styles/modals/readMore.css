@@ -1,8 +1,25 @@
 body.active-modal {
     overflow-y: hidden;
-  }
-  
-  .modal, .overlay {
+}
+
+.experience-description {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.experience-description li {
+    margin-bottom: 10px;
+    /* Optional: add some space between the items */
+}
+
+.experience-skills {
+    text-align: justify;
+    margin-left: 10%;
+}
+.modal,
+.overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -13,27 +30,30 @@ body.active-modal {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     background: rgba(49, 49, 49, 0.8);
-    backdrop-filter: blur(100%); /* Add this line */
+    backdrop-filter: blur(100%);
+    /* Add this line */
     z-index: 1000;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     position: relative;
     background: #f1f1f1;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
     max-width: 60%;
-    max-height: 80vh; /* Set a maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80vh;
+    /* Set a maximum height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
     z-index: 1001;
-  }
-  
-  .close-modal {
+}
+
+.close-modal {
     width: auto;
     height: auto;
     position: absolute;
@@ -45,34 +65,33 @@ body.active-modal {
     border: none;
     font-size: 1.5rem;
     color: #333;
-  }
-  
-  .close-modal:hover {
+}
+
+.close-modal:hover {
     color: #000;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .modal-content {
-      max-width: 90%;
+        max-width: 90%;
     }
-  
+
     .close-modal {
-      font-size: 1.2rem;
-      top: 5px;
-      right: 5px;
+        font-size: 1.2rem;
+        top: 5px;
+        right: 5px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .modal-content {
-      max-width: 95%;
-      padding: 15px;
+        max-width: 95%;
+        padding: 15px;
     }
-  
+
     .close-modal {
-      font-size: 1rem;
-      top: 5px;
-      right: 5px;
+        font-size: 1rem;
+        top: 5px;
+        right: 5px;
     }
-  }
-  
+}

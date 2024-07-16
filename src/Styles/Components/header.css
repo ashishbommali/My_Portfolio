@@ -16,7 +16,7 @@ header {
 
 header h1 {
   margin-left: 100px;
-  font-size:  x-large;
+  font-size: x-large;
   /* Adjust as needed */
 }
 
@@ -41,8 +41,27 @@ nav ul li {
 nav ul li a {
   color: #000000;
   text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3f3838;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   font-weight: bold;
+}
+
+nav ul li a:hover::after {
+  visibility: visible;
+  width: 100%;
 }

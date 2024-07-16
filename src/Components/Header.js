@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import '../styles/components/header.css';
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+  }, [darkMode]);
+
   return (
     <header>
       <h1>Ashish</h1>
@@ -16,6 +22,9 @@ const Header = () => {
           <li><Link to="contact" offset={-100} spy={true} smooth={true} duration={200}>Contact</Link></li>
         </ul>
       </nav>
+      <button className='theme-button' onClick={() => setDarkMode(!darkMode)}>
+        Switch to {darkMode ? 'Light' : 'Dark'} Mode
+      </button>
     </header>
   );
 };
