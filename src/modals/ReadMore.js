@@ -29,7 +29,11 @@ const ReadMore = ({ experience, toggleModal }) => {
                     <h2>{experience.title}</h2>
                     <p>{experience.date}</p>
                     <p>{experience.location}</p>
-                    <p>{experience.description}</p>
+                    <ul className="experience-description">
+                        {experience.description.map((line, idx) => (
+                            <li key={idx}>{line}</li>
+                        ))}
+                    </ul>
                     <ul className="experience-skills">
                         {experience.skills.map((skill, idx) => (
                             <li key={idx}>{skill}</li>
