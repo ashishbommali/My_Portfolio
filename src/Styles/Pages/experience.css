@@ -28,7 +28,7 @@ h2 {
 }
 
 .read-more-button {
-    width: 20%;
+    width: auto;
     justify-content: center;
 }
 .experience-skills {

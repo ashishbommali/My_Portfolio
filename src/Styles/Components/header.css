@@ -7,23 +7,17 @@ header {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  /* Optional: Add a background color */
   z-index: 1000;
-  /* Ensure it appears above other content */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Optional: Add a shadow for depth */
 }
 
 header h1 {
   margin-left: 100px;
   font-size: x-large;
-  /* Adjust as needed */
 }
 
-/* Adjust content below the fixed header */
 body {
   padding-top: 5rem;
-  /* Adjust this value according to your header height */
 }
 
 nav ul {
@@ -64,4 +58,50 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   visibility: visible;
   width: 100%;
+}
+
+.theme-button {
+  margin-right: 1rem;
+  width: auto;
+}
+
+.menu-button {
+  width: auto;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    opacity: 90%;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+
+  header h1 {
+    margin-left: 20px;
+  }
+
+  .theme-button {
+    display: flex;
+  }
 }

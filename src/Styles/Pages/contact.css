@@ -1,0 +1,106 @@
+/* Styles/Pages/contact.css */
+
+.contact-container {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.contact-form,
+.contact-details {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form:hover,
+.contact-details:hover {
+    transform: scale(1.02);
+}
+
+.contact-form h2,
+.contact-details h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 80%;
+    padding: 10px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: var(--button-hover-background-color);
+    transform: scale(1.1);
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+/* Responsive Adjustments for Smaller Devices */
+
+@media (max-width: 768px) {
+    .contact-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .contact-details {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}

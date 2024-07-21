@@ -1,8 +1,11 @@
 #home {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+   
+  width: 100%;
+  margin: 0 auto;
 }
 
 .sidebar {
@@ -11,6 +14,8 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .social-media-icons {
@@ -34,10 +39,9 @@
 .self-introduction {
   display: flex;
   align-items: center;
-  margin-left: 100px;
-  /* Adjust the spacing between the sidebar and content as needed */
   flex-direction: column;
-  /* Ensure the content is centered */
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .text {
@@ -58,7 +62,7 @@ p {
 }
 
 .hello-button {
-  width: 25%;
+  width: 100%;
   height: 20vh;
 }
 
@@ -91,8 +95,8 @@ p {
 }
 
 button {
-  width: 100%;
-  height: 25%;
+  width: auto;
+  height: auto;
   position: relative;
   padding: 0px 35px;
   background-color: #fafafa;
@@ -104,7 +108,7 @@ button {
   border-radius: 8px;
   box-shadow: 0 0 0 #292928;
   text-align: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
@@ -167,16 +171,16 @@ button:hover .cresecent-star5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
-  /* Adjust the spacing between sidebar and photo as needed */
-}
+   margin-left: 5%;
+  margin-right: 5%;
+ }
 
 .my-photos {
   width: 400px;
   height: 400px;
   overflow: hidden;
   border-radius: 50%;
-  border: 4px solid #000;
+  border: 2px solid #000;
   /* Black border around the photo */
   display: flex;
   justify-content: center;
@@ -207,50 +211,79 @@ button:hover .cresecent-star5 {
   margin: auto;
 }
 
-.html5 {
-  position: absolute;
-  top: -8%;
-  left: calc(50% - 20px);
+.html5 { position: absolute; top: -9%; left: calc(50% - 20px); }
+.css3 { position: absolute; top: 15%; left: calc(40% - 160px); }
+.js { position: absolute; top: 15%; left: calc(80% + 50px); }
+.react { position: absolute; top: 50%; left: calc(60% + 170px); }
+.angular { position: absolute; top: 85%; left: calc(60% + 100px); }
+.database { position: absolute; top: 85%; left: calc(50% - 180px); }
+.java { position: absolute; top: 101%; left: calc(50% - 20px); }
+.nodeJs { position: absolute; top: 50%; left: calc(50% - 240px); }
+
+/* Responsive Adjustments for Smaller Devices */
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+
+  .self-introduction {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .photo-container {
+    margin-left: 0;
+  }
+
+  .my-photos {
+    width: 300px;
+    height: 300px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 0px 20px;
+  }
 }
 
-.css3 {
-  position: absolute;
-  top: 15%;
-  left: calc(40% - 160px);
-}
+@media (max-width: 480px) {
+  .my-photos {
+    width: 200px;
+    height: 200px;
+  }
 
-.js {
-  position: absolute;
-  top: 15%;
-  left: calc(80% + 50px);
-}
+  .icon {
+    font-size: 1.25rem;
+  }
 
-.react {
-  position: absolute;
-  top: 50%;
-  left: calc(60% + 170px);
-}
+  h2 {
+    font-size: 1.75rem;
+  }
 
-.angular {
-  position: absolute;
-  top: 85%;
-  left: calc(60% + 100px);
-}
+  p {
+    font-size: 1rem;
+  }
 
-.database {
-  position: absolute;
-  top: 85%;
-  left: calc(50% - 180px);
-}
-
-.java {
-  position: absolute;
-  top: 101%;
-  left: calc(50% - 20px);
-}
-
-.nodeJs {
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 240px);
+  button {
+    font-size: 1.25rem;
+    padding: 0px 15px;
+  }
 }

@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div id="about">
       <h1>About MySelf</h1>
+      
     </div>
   );
 };
