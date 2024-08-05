@@ -1,5 +1,16 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+
 }
 
 .App-logo {
@@ -32,10 +43,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+/* App.css or a new global CSS file */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ }

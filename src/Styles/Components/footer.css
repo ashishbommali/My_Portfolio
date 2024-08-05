@@ -1,18 +1,18 @@
-footer {
+/* footer.css */
+#footer {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 10px 0;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  margin-top: auto; /* Pushes footer to the bottom */
 }
 
 .social-media-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
+  flex-direction: row;
 }
 
 .social-media-icons a {

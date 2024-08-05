@@ -18,6 +18,7 @@ body.active-modal {
     text-align: justify;
     margin-left: 10%;
 }
+
 .modal,
 .overlay {
     width: 100vw;
@@ -46,7 +47,7 @@ body.active-modal {
     border-radius: 20px;
     width: 100%;
     max-width: 60%;
-    max-height: 80vh;
+    max-height: 70vh;
     /* Set a maximum height */
     overflow-y: auto;
     /* Enable vertical scrolling */

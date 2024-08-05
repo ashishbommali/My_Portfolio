@@ -1,10 +1,18 @@
 /* Styles/Pages/experience.css */
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .experience-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    width: 75%;
+    width: 80%;
     /* 3/4 width */
     margin: 50px auto;
     /* Center horizontally with top and bottom margin */
@@ -31,6 +39,7 @@ h2 {
     width: auto;
     justify-content: center;
 }
+
 .experience-skills {
     display: flex;
     flex-wrap: wrap;

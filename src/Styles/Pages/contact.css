@@ -1,10 +1,18 @@
 /* Styles/Pages/contact.css */
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .contact-container {
-    width: auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 20px;
     background-color: var(--background-color);
 }
@@ -12,6 +20,8 @@
 .contact-form,
 .contact-details {
     flex: 1;
+    min-width: 280px;
+    max-width: 75%;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -76,14 +86,15 @@
 
 @media (max-width: 768px) {
     .contact-container {
-        width: 100%;
+        width: 80%;
         flex-direction: column;
         align-items: center;
     }
 
     .contact-form,
     .contact-details {
-        width: 100%;
+        max-width: 90%;
+        /* Narrower on smaller screens */
         margin: 10px 0;
     }
 }
@@ -94,10 +105,10 @@
         flex-direction: column;
         align-items: center;
     }
+
     .contact-form input,
     .contact-form textarea {
         padding: 8px;
-        
     }
 
     .contact-form button {

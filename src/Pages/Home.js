@@ -4,8 +4,7 @@ import myPhoto1 from '../assets/images/20240304_120600.jpg';
 import myPhoto2 from '../assets/images/IMG_20240123_210618_578.jpg';
 import myPhoto3 from '../assets/images/IMG_20240127_234419_830.jpg';
 import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaDatabase, FaJava, FaNodeJs,
-  FaInstagram, FaFacebook, FaTwitter, FaEnvelope, FaLinkedin, FaGithub, FaHandshake, FaMouse, FaArrowDown,
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaDatabase, FaJava, FaNodeJs, FaHandshake, FaMouse, FaArrowDown,
 } from 'react-icons/fa';
 import { IoIosSend } from "react-icons/io";
 
@@ -26,7 +25,7 @@ const Home = () => {
 
   return (
     <div id="home">
-      <div className="sidebar">
+      {/* <div className="sidebar">
         <div className="social-media-icons">
           <a href="https://www.instagram.com/bommali_ashish" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="https://www.facebook.com/bommali.ashish" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
@@ -35,7 +34,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/ashish-bommali-5a8686170" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://github.com/ashishbommali" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         </div>
-      </div>
+      </div> */}
       <div className="self-introduction">
         <div className="text">
           <h2>Ashish Bommali <FaHandshake /></h2>

@@ -10,7 +10,7 @@ const Contact = () => {
     <div id="contact">
       <div className="contact-container">
         <div className="contact-form">
-          <h2>Send a Message</h2>
+          <h2>Write me a Message</h2>
           <form>
 
             <input type="text" id="name" placeholder='Name' name="name" required />

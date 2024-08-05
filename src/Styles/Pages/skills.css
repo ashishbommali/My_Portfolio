@@ -1,75 +1,94 @@
 /* Styles/Pages/skills.css */
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 75%; /* 3/4 width */
-    margin: 50px auto; /* Center horizontally with top and bottom margin */
-  }
-  
-  .skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding-left: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-        max-width: none; /* Allow the card to take up more space on smaller screens */
-      }
-    .skills-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px; /* Adjust this value to increase or decrease the gap on smaller screens */
-    }
-  }
-  
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  /* 3/4 width */
+  padding: 20px;
+  /* Center horizontally with top and bottom margin */
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
   .card {
-    width: 100%; /* Full width of parent (skills-container) */
-    max-width: 300px; /* Limit max-width for responsive layout */
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center; /* Center align text */
+    max-width: none;
+    /* Allow the card to take up more space on smaller screens */
   }
-  
-  .card h2 {
-    margin-bottom: 10px; /* Space below heading */
-    color: #333; /* Darker text color */
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* Adjust this value to increase or decrease the gap on smaller screens */
   }
-  
-  .card ul {
-    list-style: none;
-    padding: 15%;
-  }
-  
-  .card ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Reduce margin between items */
-  }
-  
-  .card ul li .verified-icon {
-    margin-right: 8px; /* Adjust icon margin */
-  }
-  
-  .custom-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 2;
-    font-size: 24px;
-    color: #000;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
+}
+
+.card {
+  width: 100%;
+  /* Full width of parent (skills-container) */
+  max-width: 300px;
+  /* Limit max-width for responsive layout */
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* Center align text */
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  /* Space below heading */
+  color: #333;
+  /* Darker text color */
+}
+
+.card ul {
+  list-style: none;
+  padding: 15%;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Reduce margin between items */
+}
+
+.card ul li .verified-icon {
+  margin-right: 8px;
+  /* Adjust icon margin */
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  font-size: 24px;
+  color: #000;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
