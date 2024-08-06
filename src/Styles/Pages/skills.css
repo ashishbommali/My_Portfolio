@@ -1,7 +1,7 @@
 /* Styles/Pages/skills.css */
 #skills {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -25,9 +25,11 @@
   padding-left: 0;
 }
 
+
+
 @media (max-width: 768px) {
   .card {
-    max-width: none;
+    max-width: 80%;
     /* Allow the card to take up more space on smaller screens */
   }
 
@@ -41,7 +43,7 @@
 .card {
   width: 100%;
   /* Full width of parent (skills-container) */
-  max-width: 300px;
+  max-width: 80%;
   /* Limit max-width for responsive layout */
   border: 1px solid #ddd;
   border-radius: 20px;
