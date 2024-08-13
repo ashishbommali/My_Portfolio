@@ -82,6 +82,25 @@
     color: #005bb5;
 }
 
+.notification {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.notification.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.notification.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+
 /* Responsive Adjustments for Smaller Devices */
 
 @media (max-width: 768px) {
