@@ -1,0 +1,8 @@
+{
+  "name": "My Portfolio",
+  "description": "Professional portfolio Android application showcasing skills, experience, educational background, and projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

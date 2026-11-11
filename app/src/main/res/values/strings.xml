@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Portfolio</string>
+    <string name="portfolio_owner_name">Ashish Bommali</string>
+    <string name="portfolio_owner_handle">ashishbommali</string>
+    <string name="portfolio_owner_email">ashishbommali@gmail.com</string>
+    <string name="portfolio_owner_role">Software &amp; Mobile Engineer</string>
+    <string name="portfolio_owner_tagline">Showcasing skills, experience, educational background, and projects — explore my journey and accomplishments.</string>
+    <string name="portfolio_repo_url">https://github.com/ashishbommali/My_Portfolio</string>
+    <string name="portfolio_github_profile_url">https://github.com/ashishbommali</string>
+
+    <string name="nav_overview">Overview</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_journey">Journey</string>
+    <string name="nav_skills">Skills</string>
+
+    <string name="action_email_me">Email</string>
+    <string name="action_github">GitHub</string>
+    <string name="action_share">Share</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_theme_toggle">Switch Theme</string>
+    <string name="action_copy_email">Copy Email</string>
+    <string name="action_open_repository">Open Repository</string>
+    <string name="action_view_all">View All</string>
+    <string name="action_clear_filter">Clear Filter</string>
+    <string name="action_back">Back</string>
+    <string name="action_filter_projects_by_skill">Explore Related Projects</string>
+
+    <string name="section_featured_projects">Featured Projects</string>
+    <string name="section_core_capabilities">Core Capabilities</string>
+    <string name="section_recent_milestones">Journey Highlights</string>
+    <string name="section_about_summary">About This Portfolio</string>
+
+    <string name="filter_all">All</string>
+    <string name="filter_experience">Experience</string>
+    <string name="filter_education">Education</string>
+
+    <string name="search_projects_hint">Search projects or technologies…</string>
+    <string name="search_skills_hint">Search skills or tools…</string>
+
+    <string name="empty_projects_title">No matching projects</string>
+    <string name="empty_projects_subtitle">Try another category or clear your search filter.</string>
+    <string name="empty_skills_title">No matching skills</string>
+    <string name="empty_skills_subtitle">Try adjusting your search or category selection.</string>
+
+    <string name="detail_overview_title">Overview &amp; Problem</string>
+    <string name="detail_architecture_title">Implementation &amp; Highlights</string>
+    <string name="detail_tech_stack_title">Technology Stack</string>
+    <string name="detail_outcome_title">Key Outcomes</string>
+
+    <string name="connect_sheet_title">Connect &amp; Portfolio Info</string>
+    <string name="connect_sheet_subtitle">Originated from github.com/ashishbommali/My_Portfolio</string>
+    <string name="connect_email_copied">Email copied to clipboard</string>
+    <string name="connect_no_email_app">No email app found on this device</string>
+    <string name="connect_no_browser_app">No browser app found to open link</string>
+
+    <string name="cd_hero_banner">Editorial portfolio hero backdrop</string>
+    <string name="cd_profile_avatar">Ashish Bommali developer avatar</string>
+    <string name="cd_project_artwork">Project cover artwork</string>
+</resources>
